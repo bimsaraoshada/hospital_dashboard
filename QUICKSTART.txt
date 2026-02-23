@@ -1,0 +1,41 @@
+# Project Structure
+new_dashboard/
+├── app.py                    # Main Streamlit dashboard application
+├── risk_predictor.py         # TabPFN risk prediction module
+├── data_generator.py         # Sample data generation utilities
+├── requirements.txt          # Python dependencies
+├── README.md                 # Documentation
+└── start.ps1                 # Quick start script (Windows PowerShell)
+
+# Quick Start Commands
+
+## Option 1: Using the start script (Recommended)
+.\start.ps1
+
+## Option 2: Manual setup
+# 1. Create virtual environment
+python -m venv venv
+
+# 2. Activate virtual environment
+venv\Scripts\activate  # Windows
+source venv/bin/activate  # Linux/Mac
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the dashboard
+streamlit run app.py
+
+# Additional Commands
+
+## Test data generator
+python data_generator.py
+
+## Update dependencies
+pip install --upgrade -r requirements.txt
+
+## Check installed packages
+pip list
+
+## Deactivate virtual environment
+deactivate
